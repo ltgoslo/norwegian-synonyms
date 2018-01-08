@@ -36,7 +36,7 @@ def main():
 	synonyms = 'synonym-dictionary.json'
 	model_path = sys.argv[1]
 	most_similar_path = sys.argv[2] 
-	restriction = sys.argv[3] # Only compute cosine between headword and the 'restriction' most similar words
+	restriction = sys.argv[3] # Only compute cosine between headword and the 'restriction' most frequent words
 
 	model = KeyedVectors.load_word2vec_format(model_path, binary=False)
 	with open(synonyms, 'rt', encoding='utf-8') as s:
