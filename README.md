@@ -1,10 +1,15 @@
 # The Norwegian Synonymy Test Set
 
 This repository holds the Norwegian Synonymy Test Set, created for the purpose of evaluating 
-distributional semantic models. The test set is derived from Kunnskapsforlaget's 
-"Norske synonymer blåordbok" by Dag Gundersen and has been created for the evaluation of 
-distributional models of semantic word similarity. The resource is distributed under the
-[Creative Commons Attribution-NonCommercial-ShareAlike license (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/) and is for academic research purposes only.
+distributional semantic models.
+
+## Terms of use
+
+The Norwegian Synonymy Test Set is derived from Kunnskapsforlaget's "Norske synonymer blåordbok" 
+by Dag Gundersen and has been created for the evaluation of distributional models of semantic word similarity. 
+The resource is distributed under the [Creative Commons Attribution-NonCommercial-ShareAlike license (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/) and is for academic research purposes only.
+
+# Format
 
 The test set ```norwegian-synonyms.json```, contains 27,601 headwords and 111,111 synonym tokens 
 (and 32,303 syonym types). The test set is distributed as a JSON dictionary with headwords as 
