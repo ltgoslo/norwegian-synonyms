@@ -1,4 +1,4 @@
-# Norwegian Synonymy Test Set
+# The Norwegian Synonymy Test Set
 
 This repository holds the Norwegian Synonymy Test Set, created for the purpose of evaluating 
 distributional semantic models. The test set is derived from Kunnskapsforlaget's 
