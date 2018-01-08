@@ -80,4 +80,4 @@ synonyms. The synonyms are grouped by meaning and the lists are nested:
 
 This test set may be used for tasks such as word sense induction. 
 To avoid incorrectly adding spelling variants to synonym groups, 
-we provide them in a separate dictionary ```spelling-variants.json```. 
+we provide them separately in ```spelling-variants.json```. 
