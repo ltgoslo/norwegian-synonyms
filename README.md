@@ -23,7 +23,6 @@ word meaning, e.g., the lists are flat:
     "organisere",
     "styre"
   ]
-  ...
 }
 ```
 
@@ -48,7 +47,6 @@ synonyms. The synonyms are grouped by meaning and the lists are nested:
       "beholder"
     ]
   ]
-  ...
 }
 ```
 
