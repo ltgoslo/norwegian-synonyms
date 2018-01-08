@@ -36,7 +36,7 @@ def evalu(model, synonym_dict, most_similar, n):
 def main():
 	logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 	
-	synonyms = 'synonym-dictionary.json' # (Or cut-off version of original test set)
+	synonyms = 'norwegian-synonyms.json' # (Or cut-off version of original test set)
 	model_path = sys.argv[1]
 	most_similar_path = sys.argv[2]
 
