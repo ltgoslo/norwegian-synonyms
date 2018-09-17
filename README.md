@@ -11,8 +11,8 @@ The resource is distributed under the [Creative Commons Attribution-NonCommercia
 
 ## Format 
 
-The test set ```norwegian-synonyms.json``` contains 27,601 
-headwords and 111,111 synonym tokens (and 32,303 syonym types). The test set is distributed as a 
+The test set ```norwegian-synonyms.json``` contains 24,649 
+headwords and 106,749 synonym tokens (and 30,756 syonym types). The test set is distributed as a 
 JSON dictionary with headwords as entries. Each headword is associated with a list of its synonyms. 
 We do not differentiate between word meaning, e.g., the lists are flat:
 
