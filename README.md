@@ -58,4 +58,25 @@ recall scores as two variants of accuracy.
 A supplementary test set, `norwegian-synonyms-grouped.json`, associates each headword 
 with a list of lists of synonyms, e.g., synonyms are grouped by meaning. This test set 
 may be used for tasks such as word sense induction. Spelling variants are provided 
-separately in `spelling-variants.json`. 
+separately in `spelling-variants.json`.
+
+## Citing
+If you publish work that uses of references this resource, please cite the following master's thesis: 
+
+```
+@MastersThesis{Stadsnes18,
+  author    =     {Stadsnes, Cathrine},
+  title     =     {Evaluating Semantic Vector for Norwegian},
+  school    =     {University of Oslo},
+  year      =     {2018}
+}
+```
+
+Or our [NIK article](http://ojs.bibsys.no/index.php/NIK/article/view/490/418): 
+
+```
+Evaluating Semantic Vectors for Norwegian
+Cathrine Stadsnes, Lilja Øvrelid, Erik Velldal
+2018
+http://ojs.bibsys.no/index.php/NIK/article/view/490/418
+```
