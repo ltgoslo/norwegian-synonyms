@@ -61,7 +61,8 @@ may be used for tasks such as word sense induction. Spelling variants are provid
 separately in `spelling-variants.json`.
 
 ## Citing
-If you publish work that uses of references this resource, please cite the following master's thesis: 
+If you publish work that uses of references this resource, please cite the following 
+[master's thesis](https://www.duo.uio.no/bitstream/handle/10852/61756/thesis.pdf): 
 
 ```
 @MastersThesis{Stadsnes18,
