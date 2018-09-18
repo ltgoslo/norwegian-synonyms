@@ -68,7 +68,7 @@ If you publish work that uses of references this resource, please cite the follo
 ```
 @MastersThesis{Stadsnes18,
   author    =     {Stadsnes, Cathrine},
-  title     =     {Evaluating Semantic Vector for Norwegian},
+  title     =     {Evaluating Semantic Vectors for Norwegian},
   school    =     {University of Oslo},
   year      =     {2018}
 }
