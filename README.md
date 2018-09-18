@@ -1,7 +1,7 @@
 # The Norwegian Synonymy Test Set
 
 This repository holds the Norwegian Synonymy Test Set, defined for evaluating the task of synonym detection. 
-The test set was created by extracting words and associated synonyms from the digital version of 
+The test set was created by extracting words and synonyms from the digital version of 
 Kunnskapsforlaget's "Norske synonymer blåordbok" by Dag Gundersen. 
 
 ## Terms of use
@@ -12,9 +12,10 @@ for academic research purposes only.
 
 ## Format 
 
-`norwegian-synonyms.json` comprises 24,649 headwords and 106,749 synonym tokens (30,756 synonym types). 
-The test set is distributed as a JSON dictionary with headwords as entries. Each headword is associated 
-with a list of synonyms. We do not differentiate between word meaning, e.g., the lists are flat:
+`norwegian-synonyms.json` comprises a total of 24,649 headwords and 106,749 synonym tokens 
+(and 30,756 synonym types). The test set is distributed as a JSON dictionary of headwords. 
+Each headword is associated with a list of synonyms. We do not differentiate between word meaning, 
+e.g., the lists are flat:
 
 ```json
 {
@@ -33,51 +34,28 @@ with a list of synonyms. We do not differentiate between word meaning, e.g., the
 ## Evaluation
 
 This repository also provides evaluation scripts. In order for the scripts to work, 
-[gensim](https://radimrehurek.com/gensim/) must be installed. Further, the `<model>` 
+[gensim](https://radimrehurek.com/gensim/) must be installed. Further, the `model` 
 must be compatible with the original [word2vec](https://code.google.com/archive/p/word2vec/)
-implementation and provided in text format (or one can modify the script).
+implementation and provided in text format.
 
-```find_most_similar.py``` computes the 10-most similar words of headwords 
-in ```norwegian-synonyms.json```. It computes cosine scores between the headwords 
-and the <restriction> most frequent words and outputs the result as a JSON dictionary 
-to <most-similar-path>.
+`find_most_similar.py` computes the 10-most similar words of each headword 
+in `norwegian-synonyms.json`. It computes cosine scores between the headwords 
+and the `restriction` most frequent words and outputs the result as a JSON 
+dictionary to `most-similar-path`.
+
+`evaluate_most_similar.py` evaluates the computed 1, 5 and 10 most-similar words 
+with regards to `norwegian-synonyms.json`. It essentially computes precision and 
+recall scores as two variants of accuracy.
   
-### Example 
-```python find_most_similar.py <model> <most-similar-path> <restriction>```
+### Examples 
 
-```evaluate_most_similar.py``` evaluates the computed 1, 5 and 10 most-similar words 
-with regards to ```norwegian-synonyms.json```.
-It essentially computes precision and recall scores as two variants of accuracy.
+`python find_most_similar.py <model> <most-similar-path> <restriction>`
 
-### Example
 ```python evaluate_most_similar.py <model> <most-similar-path>```
 
 ## Supplement
 
-A supplementary test set ```norwegian-synonyms-grouped.json```, also distributed as a JSON 
-dictionary with headwords as entries, associates each headword with a list of lists of its 
-synonyms. The synonyms are grouped by meaning and the lists are nested:
-
-```json
-{
-  "kar": [
-    [
-      "mann"
-    ],
-    [
-      "brukar",
-      "basis"
-    ],
-    [
-      "potte",
-      "strippe",
-      "så",
-      "beholder"
-    ]
-  ]
-}
-```
-
-This test set may be used for tasks such as word sense induction. 
-To avoid incorrectly adding spelling variants to synonym groups, 
-we provide them separately in ```spelling-variants.json```. 
+A supplementary test set, `norwegian-synonyms-grouped.json`, associates each headword 
+with a list of lists of synonyms, e.g., synonyms are grouped by meaning. This test set 
+may be used for tasks such as word sense induction. Spelling variants are provided 
+separately in `spelling-variants.json`. 
