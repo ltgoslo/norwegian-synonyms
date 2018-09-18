@@ -74,7 +74,7 @@ If you publish work that uses or references this resource, please cite the follo
 }
 ```
 
-Or our [NIK article](http://ojs.bibsys.no/index.php/NIK/article/view/490/418): 
+Or this [NIK article](http://ojs.bibsys.no/index.php/NIK/article/view/490/418): 
 
 ```
 Evaluating Semantic Vectors for Norwegian
