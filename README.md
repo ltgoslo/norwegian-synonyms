@@ -46,7 +46,7 @@ to <most-similar-path>.
 ```python find_most_similar.py <model> <most-similar-path> <restriction>```
 
 ```evaluate_most_similar.py``` evaluates the computed 1, 5 and 10 most-similar words 
-with regards to ```norwegian-synonyms.json``` or some cut-off created in ```cutoff.py```.
+with regards to ```norwegian-synonyms.json```.
 It essentially computes precision and recall scores as two variants of accuracy.
 
 ### Example
