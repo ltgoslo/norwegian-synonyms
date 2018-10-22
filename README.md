@@ -73,11 +73,11 @@ If you publish work that uses or references this resource, please cite the follo
 }
 ```
 
-Or this [NIK article](http://ojs.bibsys.no/index.php/NIK/article/view/490/418): 
+Or this [NIK article](http://ojs.bibsys.no/index.php/NIK/article/view/490): 
 
 ```
 Evaluating Semantic Vectors for Norwegian
 Cathrine Stadsnes, Lilja Øvrelid, Erik Velldal
 2018
-http://ojs.bibsys.no/index.php/NIK/article/view/490/418
+http://ojs.bibsys.no/index.php/NIK/article/view/490
 ```
