@@ -5,7 +5,7 @@ import logging
 import json
 from gensim.models.keyedvectors import KeyedVectors
 
-def evalu(model, synonym_dict, most_similar, n):
+def evaluate(model, synonym_dict, most_similar, n):
 	""" Compute precision and recall. """
 	
 	# Headwords with at least one correctly predicted synonym
